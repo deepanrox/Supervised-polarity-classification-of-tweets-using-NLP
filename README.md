@@ -43,24 +43,7 @@ supervised-polarity-classification/
     └── methodology.md
 ```
 
-## 🛠️ Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/supervised-polarity-classification.git
-   cd supervised-polarity-classification
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download NLTK data** (automatically handled by the notebook)
-   ```python
-   import nltk
-   nltk.download('stopwords')
-   ```
 
 ## 📊 Dataset
 
@@ -212,13 +195,6 @@ This supervised polarity classification system can be applied to:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
 ## 🙏 Acknowledgments
 
 - **Sentiment140 Dataset**: Go et al. (2009) for the comprehensive dataset
@@ -231,15 +207,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 1. Go, A., Bhayani, R., & Huang, L. (2009). Twitter sentiment classification using distant supervision.
 2. Porter, M. F. (1980). An algorithm for suffix stripping.
 3. Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python.
-
-## 📞 Contact
-
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **Twitter**: [@yourtwitter](https://twitter.com/yourtwitter)
-
----
-
-⭐ **If you find this project helpful, please give it a star!**
-
-🔬 **This project demonstrates advanced NLP techniques and supervised learning for sentiment analysis.** 
