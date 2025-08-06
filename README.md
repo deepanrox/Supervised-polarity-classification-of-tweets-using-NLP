@@ -25,25 +25,6 @@ The primary goal is to develop a supervised learning model that can accurately c
 - **Interactive Prediction**: Real-time sentiment analysis
 - **Model Persistence**: Save and load trained models
 
-## 📁 Project Structure
-
-```
-supervised-polarity-classification/
-├── Sentiment_Analysis_Phase_Echo_3_1.ipynb  # Main Jupyter notebook
-├── requirements.txt                          # Python dependencies
-├── README.md                                # Project documentation
-├── .gitignore                               # Git ignore file
-├── LICENSE                                  # MIT License
-├── CONTRIBUTING.md                          # Contributing guidelines
-├── data/                                    # Dataset directory
-│   └── training.1600000.processed.noemoticon.csv
-├── models/                                  # Saved models
-│   └── trained_model.sav
-└── docs/                                    # Documentation
-    └── methodology.md
-```
-
-
 
 ## 📊 Dataset
 
@@ -84,38 +65,6 @@ supervised-polarity-classification/
 - **Recall**: Sensitivity/true positive rate
 - **F1-Score**: Harmonic mean of precision and recall
 
-## 🔧 Usage
-
-### Running the Notebook
-
-1. **Open Jupyter Notebook**
-   ```bash
-   jupyter notebook Sentiment_Analysis_Phase_Echo_3_1.ipynb
-   ```
-
-2. **Execute cells sequentially** - Each cell builds on the previous one
-
-3. **Dataset Setup** - The notebook will automatically:
-   - Download the Sentiment140 dataset from Kaggle
-   - Extract and preprocess the data
-   - Train the supervised learning model
-
-### Making Predictions
-
-```python
-# Load the trained model
-import pickle
-with open('trained_model.sav', 'rb') as f:
-    model_data = pickle.load(f)
-
-model = model_data['model']
-vectorizer = model_data['vectorizer']
-
-# Make prediction
-text = "I love this amazing product!"
-sentiment = predict_sentiment(text, model, vectorizer)
-print(f"Sentiment: {sentiment}")  # Output: Positive
-```
 
 ## 📈 Results
 
@@ -183,13 +132,6 @@ This supervised polarity classification system can be applied to:
 - matplotlib>=3.5.0
 - seaborn>=0.11.0
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -207,3 +149,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 1. Go, A., Bhayani, R., & Huang, L. (2009). Twitter sentiment classification using distant supervision.
 2. Porter, M. F. (1980). An algorithm for suffix stripping.
 3. Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python.
+
